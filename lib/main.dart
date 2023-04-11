@@ -1,12 +1,14 @@
+import 'package:clinica_leger/screens/login.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(const ClinicaLeger());
+void main() => runApp(ClinicaLeger());
 
 class ClinicaLeger extends StatelessWidget {
-  const ClinicaLeger({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return const ClinicaLeger();
+    return const MaterialApp(
+      title: 'My App',
+      home: LoginPage(),
+    );
   }
 }
